@@ -1,0 +1,137 @@
+{
+  "selected_model": "Multinomial Naive Bayes (midterm baseline)",
+  "accuracy": 0.7138888888888889,
+  "macro_precision": 0.7209936430170055,
+  "macro_recall": 0.7138888888888889,
+  "macro_f1": 0.7118910656946621,
+  "weighted_f1": 0.7118910656946622,
+  "per_class": {
+    "BUSINESS": {
+      "precision": 0.68,
+      "recall": 0.5666666666666667,
+      "f1-score": 0.6181818181818182,
+      "support": 60.0
+    },
+    "ENTERTAINMENT": {
+      "precision": 0.8085106382978723,
+      "recall": 0.6333333333333333,
+      "f1-score": 0.7102803738317757,
+      "support": 60.0
+    },
+    "POLITICS": {
+      "precision": 0.7352941176470589,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.78125,
+      "support": 60.0
+    },
+    "SPORTS": {
+      "precision": 0.746031746031746,
+      "recall": 0.7833333333333333,
+      "f1-score": 0.7642276422764228,
+      "support": 60.0
+    },
+    "TECH": {
+      "precision": 0.7407407407407407,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7017543859649122,
+      "support": 60.0
+    },
+    "WELLNESS": {
+      "precision": 0.6153846153846154,
+      "recall": 0.8,
+      "f1-score": 0.6956521739130435,
+      "support": 60.0
+    },
+    "accuracy": 0.7138888888888889,
+    "macro avg": {
+      "precision": 0.7209936430170055,
+      "recall": 0.7138888888888889,
+      "f1-score": 0.7118910656946621,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.7209936430170055,
+      "recall": 0.7138888888888889,
+      "f1-score": 0.7118910656946622,
+      "support": 360.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      34,
+      1,
+      5,
+      0,
+      9,
+      11
+    ],
+    [
+      2,
+      38,
+      4,
+      5,
+      3,
+      8
+    ],
+    [
+      4,
+      1,
+      50,
+      1,
+      0,
+      4
+    ],
+    [
+      3,
+      1,
+      5,
+      47,
+      1,
+      3
+    ],
+    [
+      4,
+      3,
+      4,
+      5,
+      40,
+      4
+    ],
+    [
+      3,
+      3,
+      0,
+      5,
+      1,
+      48
+    ]
+  ],
+  "labels": [
+    "BUSINESS",
+    "ENTERTAINMENT",
+    "POLITICS",
+    "SPORTS",
+    "TECH",
+    "WELLNESS"
+  ],
+  "model_comparison": [
+    {
+      "model": "Multinomial Naive Bayes (midterm baseline)",
+      "accuracy": 0.7138888888888889,
+      "macro_f1": 0.7118910656946621,
+      "weighted_f1": 0.7118910656946622
+    },
+    {
+      "model": "Logistic Regression (enhanced)",
+      "accuracy": 0.7083333333333334,
+      "macro_f1": 0.7080949616417446,
+      "weighted_f1": 0.7080949616417445
+    },
+    {
+      "model": "Calibrated Linear SVM (enhanced)",
+      "accuracy": 0.7083333333333334,
+      "macro_f1": 0.707099026541916,
+      "weighted_f1": 0.707099026541916
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"en_001","language":"en","text":"The technology company announced a new artificial intelligence tool for small businesses.","english_reference":"The technology company announced a new artificial intelligence tool for small businesses.","topic":"technology"},
+  {"id":"es_001","language":"es","text":"La empresa tecnológica anunció una nueva herramienta de inteligencia artificial para pequeñas empresas.","english_reference":"The technology company announced a new artificial intelligence tool for small businesses.","topic":"technology"},
+  {"id":"fr_001","language":"fr","text":"L'entreprise technologique a annoncé un nouvel outil d'intelligence artificielle pour les petites entreprises.","english_reference":"The technology company announced a new artificial intelligence tool for small businesses.","topic":"technology"},
+  {"id":"en_002","language":"en","text":"The city announced new public health measures after a heat wave.","english_reference":"The city announced new public health measures after a heat wave.","topic":"wellness"},
+  {"id":"es_002","language":"es","text":"La ciudad anunció nuevas medidas de salud pública después de una ola de calor.","english_reference":"The city announced new public health measures after a heat wave.","topic":"wellness"},
+  {"id":"fr_002","language":"fr","text":"La ville a annoncé de nouvelles mesures de santé publique après une vague de chaleur.","english_reference":"The city announced new public health measures after a heat wave.","topic":"wellness"}
+]

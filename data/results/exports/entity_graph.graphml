@@ -1,0 +1,1260 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="source_article_ids" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d2" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d1" for="node" attr.name="frequency" attr.type="long" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Seattle">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="many years">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="UNC Post-secondary">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="today">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="United Flight Airlines">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Department of Transportation">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Democrats">
+      <data key="d0">NORP</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="2018">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Georgia">
+      <data key="d0">GPE</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="South Carolina">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="this week">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Come" />
+    <node id="came" />
+    <node id="Apple">
+      <data key="d0">ORG</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Trump Spokesperson">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Obama Invaded">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Afghanistan">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Spokesperson" />
+    <node id="Says" />
+    <node id="2014">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="2015">
+      <data key="d0">DATE</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Halloween This Year">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Healthy Food Sell">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Sell" />
+    <node id="Does" />
+    <node id="DeAngelo">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Goodell">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Monday">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="daily">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="DeSean Jackson Denies Being">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Slams 'Disrespectful' Allegations">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Eagles">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Jackson">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="the NFL Player's Association">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Denies" />
+    <node id="Allegations" />
+    <node id="remained" />
+    <node id="cutting" />
+    <node id="Association" />
+    <node id="going" />
+    <node id="Hurricane #">
+      <data key="d0">EVENT</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Sandy">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="New York City">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Colin Kaepernick">
+      <data key="d0">PERSON</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Kaepernick" />
+    <node id="Donating" />
+    <node id="goes" />
+    <node id="Scott Disick's">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Scott">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="U.S.">
+      <data key="d0">GPE</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="the International Telecommunication Regulations">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Sarah Michelle Gellar Wants">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Gellar" />
+    <node id="Wants" />
+    <node id="MSU">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Will Be">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Larry Nassar Sentencing">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Michigan">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Bill Schuette">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Schuette" />
+    <node id="said" />
+    <node id="D'Angelo">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="April">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Maya Rudolph's">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="a sick day">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="day" />
+    <node id="fake" />
+    <node id="Infinity War'">
+      <data key="d0">EVENT</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Nate Moore">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Russo">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Moore" />
+    <node id="Nathan Lane Claims Harvey Weinstein Attacked">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Hillary Clinton's">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Lane">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Claims" />
+    <node id="Weinstein" />
+    <node id="Attacked" />
+    <node id="told" />
+    <node id="Seshu Kiran">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Arnold Schwarzenegger">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="100,000">
+      <data key="d0">MONEY</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Anti-Hate Group After Charlottesville">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="this weekend">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="California">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Anti-LGBT Law">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="North Carolina">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Law" />
+    <node id="Fight" />
+    <node id="Robert McIntyre">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Citizens">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="McIntyre" />
+    <node id="Chris Botti">
+      <data key="d0">PERSON</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Madeleine Peyroux">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="every day">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Botti" />
+    <node id="Chatting" />
+    <node id="Americans">
+      <data key="d0">NORP</data>
+      <data key="d1">3</data>
+    </node>
+    <node id="Create Infographics">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Know" />
+    <node id="Next Year">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="This Week">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Tuesday">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Verge">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Israeli">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Calcalist">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="relayed" />
+    <node id="mulling" />
+    <node id="Feds">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Losing" />
+    <node id="20 months later">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Last Year">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="last year">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="the Wall Street Journal">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="working" />
+    <node id="ABC iPad Factory">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Foxconn">
+      <data key="d0">GPE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="last month">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Earlier this week">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="the Centers for Disease Control and Prevention">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="CDC">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="2011">
+      <data key="d0">DATE</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Centers" />
+    <node id="released" />
+    <node id="Yahoo's Bad Week Ends With An Apology">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Marissa Mayer Mayer">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Tumblr">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Week" />
+    <node id="Ends" />
+    <node id="Kevin McCarthy">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Planned Parenthood House">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Republicans">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Planned Parenthood">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Parenthood" />
+    <node id="defunding" />
+    <node id="Gary Pinkel">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Pinkel" />
+    <node id="Obama Administration Approves Plan To Make Prison Phone">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Today">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Administration" />
+    <node id="Approves" />
+    <node id="Plan" />
+    <node id="Phone" />
+    <node id="Calls" />
+    <node id="2012">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="2006">
+      <data key="d0">DATE</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Bernie Sanders Runs">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Republican">
+      <data key="d0">NORP</data>
+      <data key="d1">2</data>
+    </node>
+    <node id="Bernie Sanders">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Democrat">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Sanders" />
+    <node id="needs" />
+    <node id="Ohio State">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="AP">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Standout">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Dem Seeks Probe">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Donald Trump's">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Conflicts Of Interest Elijah Cummings">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="the Oversight Committee">
+      <data key="d0">ORG</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Trump">
+      <data key="d0">PERSON</data>
+      <data key="d1">1</data>
+    </node>
+    <node id="Probe" />
+    <node id="wants" />
+    <node id="Committee" />
+    <node id="hear" />
+    <node id="sway" />
+    <node id="Selfie">
+      <data key="d0">NORP</data>
+      <data key="d1">1</data>
+    </node>
+    <edge source="Seattle" target="many years">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="UNC Post-secondary" target="today">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="United Flight Airlines" target="Department of Transportation">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Democrats" target="2018">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Democrats" target="Come">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Democrats" target="Georgia">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Democrats" target="South Carolina">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Democrats" target="this week">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Democrats" target="came">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Georgia" target="South Carolina">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Georgia" target="this week">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="South Carolina" target="this week">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Apple" target="Tuesday">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Apple" target="Verge">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Apple" target="Israeli">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Apple" target="Calcalist">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Apple" target="mulling">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Trump Spokesperson" target="Obama Invaded">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Trump Spokesperson" target="Afghanistan">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Obama Invaded" target="Afghanistan">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Afghanistan" target="Says">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Spokesperson" target="Says">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="2014" target="2015">
+      <data key="d2">co_occurs</data>
+      <data key="d3">2</data>
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Sell" target="Does">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Goodell" target="Monday">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">10</data>
+    </edge>
+    <edge source="DeSean Jackson Denies Being" target="Slams 'Disrespectful' Allegations">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="DeSean Jackson Denies Being" target="Eagles">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="DeSean Jackson Denies Being" target="Jackson">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="DeSean Jackson Denies Being" target="the NFL Player's Association">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Slams 'Disrespectful' Allegations" target="Eagles">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Slams 'Disrespectful' Allegations" target="Jackson">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Slams 'Disrespectful' Allegations" target="the NFL Player's Association">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Eagles" target="Jackson">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Eagles" target="the NFL Player's Association">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Eagles" target="remained">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Jackson" target="the NFL Player's Association">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Jackson" target="Denies">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Jackson" target="cutting">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Denies" target="Allegations">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Association" target="going">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Hurricane #" target="Sandy">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Hurricane #" target="New York City">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Sandy" target="New York City">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Kaepernick" target="Donating">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Kaepernick" target="goes">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Scott Disick's" target="Scott">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">15</data>
+    </edge>
+    <edge source="U.S." target="the International Telecommunication Regulations">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">16</data>
+    </edge>
+    <edge source="U.S." target="2012">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="U.S." target="2011">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="U.S." target="2006">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="Gellar" target="Wants">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">17</data>
+    </edge>
+    <edge source="MSU" target="Will Be">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="MSU" target="Larry Nassar Sentencing">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="MSU" target="Michigan">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="MSU" target="Bill Schuette">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Will Be" target="Larry Nassar Sentencing">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Will Be" target="Michigan">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Will Be" target="Bill Schuette">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Larry Nassar Sentencing" target="Michigan">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Larry Nassar Sentencing" target="Bill Schuette">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Michigan" target="Bill Schuette">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Schuette" target="said">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+    </edge>
+    <edge source="said" target="Moore">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+    </edge>
+    <edge source="said" target="McIntyre">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">27</data>
+    </edge>
+    <edge source="said" target="Pinkel">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">49</data>
+    </edge>
+    <edge source="D'Angelo" target="April">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">19</data>
+    </edge>
+    <edge source="D'Angelo" target="Maya Rudolph's">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">19</data>
+    </edge>
+    <edge source="April" target="Maya Rudolph's">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">19</data>
+    </edge>
+    <edge source="day" target="fake">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">21</data>
+    </edge>
+    <edge source="Infinity War'" target="Nate Moore">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+    </edge>
+    <edge source="Infinity War'" target="Russo">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+    </edge>
+    <edge source="Nate Moore" target="Russo">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+    </edge>
+    <edge source="Nathan Lane Claims Harvey Weinstein Attacked" target="Hillary Clinton's">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Nathan Lane Claims Harvey Weinstein Attacked" target="Lane">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Hillary Clinton's" target="Lane">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Lane" target="Claims">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Lane" target="told">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Weinstein" target="Attacked">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Arnold Schwarzenegger" target="100,000">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">25</data>
+    </edge>
+    <edge source="Arnold Schwarzenegger" target="Anti-Hate Group After Charlottesville">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">25</data>
+    </edge>
+    <edge source="100,000" target="Anti-Hate Group After Charlottesville">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">25</data>
+    </edge>
+    <edge source="this weekend" target="California">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">25</data>
+    </edge>
+    <edge source="Law" target="Fight">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">26</data>
+    </edge>
+    <edge source="Robert McIntyre" target="Citizens">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">27</data>
+    </edge>
+    <edge source="Chris Botti" target="Madeleine Peyroux">
+      <data key="d2">co_occurs</data>
+      <data key="d3">2</data>
+      <data key="d4">28</data>
+    </edge>
+    <edge source="Chris Botti" target="every day">
+      <data key="d2">co_occurs</data>
+      <data key="d3">2</data>
+      <data key="d4">28</data>
+    </edge>
+    <edge source="Madeleine Peyroux" target="every day">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">28</data>
+    </edge>
+    <edge source="Botti" target="Chatting">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">28</data>
+    </edge>
+    <edge source="Americans" target="Know">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">31</data>
+    </edge>
+    <edge source="Americans" target="Losing">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">35</data>
+    </edge>
+    <edge source="Americans" target="Last Year">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="Americans" target="last year">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="Americans" target="the Wall Street Journal">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="Americans" target="working">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="Tuesday" target="Verge">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Tuesday" target="Israeli">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Tuesday" target="Calcalist">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Verge" target="Israeli">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Verge" target="Calcalist">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Verge" target="relayed">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Israeli" target="Calcalist">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">32</data>
+    </edge>
+    <edge source="Last Year" target="last year">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="Last Year" target="the Wall Street Journal">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="last year" target="the Wall Street Journal">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+    </edge>
+    <edge source="ABC iPad Factory" target="Foxconn">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">39</data>
+    </edge>
+    <edge source="ABC iPad Factory" target="last month">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">39</data>
+    </edge>
+    <edge source="Foxconn" target="last month">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">39</data>
+    </edge>
+    <edge source="Earlier this week" target="the Centers for Disease Control and Prevention">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="Earlier this week" target="CDC">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="Earlier this week" target="2011">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="the Centers for Disease Control and Prevention" target="CDC">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="the Centers for Disease Control and Prevention" target="2011">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="CDC" target="2011">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="2011" target="2012">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="2011" target="2006">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="Centers" target="released">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">40</data>
+    </edge>
+    <edge source="Yahoo's Bad Week Ends With An Apology" target="Marissa Mayer Mayer">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">41</data>
+    </edge>
+    <edge source="Yahoo's Bad Week Ends With An Apology" target="Tumblr">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">41</data>
+    </edge>
+    <edge source="Marissa Mayer Mayer" target="Tumblr">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">41</data>
+    </edge>
+    <edge source="Week" target="Ends">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">41</data>
+    </edge>
+    <edge source="Kevin McCarthy" target="Planned Parenthood House">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Kevin McCarthy" target="Republicans">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Kevin McCarthy" target="Planned Parenthood">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Planned Parenthood House" target="Republicans">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Planned Parenthood House" target="Planned Parenthood">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Republicans" target="Planned Parenthood">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Parenthood" target="defunding">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">46</data>
+    </edge>
+    <edge source="Obama Administration Approves Plan To Make Prison Phone" target="Today">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">51</data>
+    </edge>
+    <edge source="Administration" target="Approves">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">51</data>
+    </edge>
+    <edge source="Approves" target="Plan">
+      <data key="d2">object_of</data>
+      <data key="d3">1</data>
+      <data key="d4">51</data>
+    </edge>
+    <edge source="Phone" target="Calls">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">51</data>
+    </edge>
+    <edge source="2012" target="2006">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+    </edge>
+    <edge source="Bernie Sanders Runs" target="Republican">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">58</data>
+    </edge>
+    <edge source="Bernie Sanders Runs" target="Bernie Sanders">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">58</data>
+    </edge>
+    <edge source="Republican" target="Bernie Sanders">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">58</data>
+    </edge>
+    <edge source="Republican" target="Democrat">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">58</data>
+    </edge>
+    <edge source="Sanders" target="needs">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">58</data>
+    </edge>
+    <edge source="AP" target="Standout">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">59</data>
+    </edge>
+    <edge source="Dem Seeks Probe" target="Donald Trump's">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Dem Seeks Probe" target="Conflicts Of Interest Elijah Cummings">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Dem Seeks Probe" target="the Oversight Committee">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Dem Seeks Probe" target="Trump">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Donald Trump's" target="Conflicts Of Interest Elijah Cummings">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Donald Trump's" target="the Oversight Committee">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Donald Trump's" target="Trump">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Conflicts Of Interest Elijah Cummings" target="the Oversight Committee">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Conflicts Of Interest Elijah Cummings" target="Trump">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="the Oversight Committee" target="Trump">
+      <data key="d2">co_occurs</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Trump" target="sway">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Probe" target="wants">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+    <edge source="Committee" target="hear">
+      <data key="d2">subject_of</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+    </edge>
+  </graph>
+</graphml>

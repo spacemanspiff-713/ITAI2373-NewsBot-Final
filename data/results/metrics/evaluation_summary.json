@@ -1,0 +1,80 @@
+{
+  "classification": {
+    "selected_model": "Multinomial Naive Bayes (midterm baseline)",
+    "accuracy": 0.7138888888888889,
+    "macro_f1": 0.7118910656946621,
+    "weighted_f1": 0.7118910656946622
+  },
+  "topic_model": {
+    "selected": "nmf",
+    "quality": [
+      {
+        "model": "lda",
+        "topic_diversity": 0.59375,
+        "coherence_proxy": 0.8631314310621274,
+        "interpretation": "Compare top-word distinctiveness; validate qualitative meaning in the notebook."
+      },
+      {
+        "model": "nmf",
+        "topic_diversity": 0.96875,
+        "coherence_proxy": 0.9953416149068323,
+        "interpretation": "Compare top-word distinctiveness; validate qualitative meaning in the notebook."
+      }
+    ]
+  },
+  "sentiment": {
+    "timeline_rows": 51,
+    "anomalies": 0
+  },
+  "entity_graph": {
+    "nodes": 165,
+    "edges": 151
+  },
+  "semantic_search": {
+    "precision_at_1": 1.0,
+    "queries": 3,
+    "note": "Small authored relevance set."
+  },
+  "conversation": {
+    "intent_accuracy": 1.0,
+    "queries": 6
+  },
+  "data_validation": {
+    "valid": true,
+    "row_count": 1800,
+    "columns": [
+      "article_id",
+      "title",
+      "content",
+      "full_text",
+      "category",
+      "authors",
+      "source",
+      "date",
+      "link",
+      "headline",
+      "short_description"
+    ],
+    "categories": {
+      "BUSINESS": 300,
+      "ENTERTAINMENT": 300,
+      "POLITICS": 300,
+      "SPORTS": 300,
+      "TECH": 300,
+      "WELLNESS": 300
+    },
+    "missing_by_column": {
+      "headline": 0,
+      "short_description": 0,
+      "category": 0,
+      "authors": 0,
+      "date": 0,
+      "full_text": 0
+    },
+    "duplicate_rows": 11,
+    "invalid_dates": 0,
+    "date_min": "2012-01-28",
+    "date_max": "2022-09-14",
+    "warnings": []
+  }
+}

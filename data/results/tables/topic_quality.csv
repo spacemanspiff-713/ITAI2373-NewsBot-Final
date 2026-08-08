@@ -1,0 +1,3 @@
+model,topic_diversity,coherence_proxy,interpretation
+lda,0.59375,0.8631314310621274,Compare top-word distinctiveness; validate qualitative meaning in the notebook.
+nmf,0.96875,0.9953416149068323,Compare top-word distinctiveness; validate qualitative meaning in the notebook.

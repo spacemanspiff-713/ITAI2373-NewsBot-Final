@@ -1,0 +1,26 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Raw and large source data
+data/raw/*.json
+data/raw/*.jsonl
+data/raw/*.zip
+
+# Generated models and caches
+data/models/*
+!data/models/.gitkeep
+.cache/
+huggingface/
+transformers_cache/
+
+# Local generated artifacts
+*.log
+.DS_Store
+*.egg-info/

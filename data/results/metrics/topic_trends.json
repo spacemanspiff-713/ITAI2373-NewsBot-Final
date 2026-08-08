@@ -1,0 +1,23 @@
+{
+  "selected_model": "nmf",
+  "emerging_topics": [
+    "topic_2",
+    "topic_3",
+    "topic_5"
+  ],
+  "declining_topics": [
+    "topic_1",
+    "topic_4",
+    "topic_0"
+  ],
+  "spikes": {
+    "topic_0": "2012",
+    "topic_1": "2014",
+    "topic_2": "2020",
+    "topic_3": "2022",
+    "topic_4": "2013",
+    "topic_5": "2018",
+    "topic_6": "2020",
+    "topic_7": "2012"
+  }
+}

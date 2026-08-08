@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "itai2373-newsbot-final"
+version = "2.0.0"
+description = "NewsBot Intelligence System 2.0"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

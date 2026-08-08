@@ -1,0 +1,38 @@
+{
+  "valid": true,
+  "row_count": 1800,
+  "columns": [
+    "article_id",
+    "title",
+    "content",
+    "full_text",
+    "category",
+    "authors",
+    "source",
+    "date",
+    "link",
+    "headline",
+    "short_description"
+  ],
+  "categories": {
+    "BUSINESS": 300,
+    "ENTERTAINMENT": 300,
+    "POLITICS": 300,
+    "SPORTS": 300,
+    "TECH": 300,
+    "WELLNESS": 300
+  },
+  "missing_by_column": {
+    "headline": 0,
+    "short_description": 0,
+    "category": 0,
+    "authors": 0,
+    "date": 0,
+    "full_text": 0
+  },
+  "duplicate_rows": 11,
+  "invalid_dates": 0,
+  "date_min": "2012-01-28",
+  "date_max": "2022-09-14",
+  "warnings": []
+}

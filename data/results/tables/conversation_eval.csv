@@ -1,0 +1,7 @@
+query,expected_intent,predicted_intent
+show tech news,search,search
+summarize politics coverage,summarize,summarize
+what is the sentiment,sentiment,sentiment
+topic trends,topic_trend,topic_trend
+compare Apple and Google coverage,compare,compare
+help,help,help

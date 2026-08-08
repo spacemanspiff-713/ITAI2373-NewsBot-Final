@@ -1,0 +1,7 @@
+NewsBot 2.0 does not require paid API keys for core functionality.
+
+Optional integrations must use environment variables only:
+- NEWSBOT_SECRET_KEY: Flask session secret
+- NEWSBOT_TRANSLATION_BACKEND: auto, marian, deep_translator, or unavailable
+
+Do not place real credentials in this file, .env.example, notebooks, or Git.
