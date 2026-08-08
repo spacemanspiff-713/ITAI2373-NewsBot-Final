@@ -19,7 +19,11 @@ Set `NEWSBOT_SECRET_KEY` to a unique deployment secret. Optional variables are `
 
 ## Containers and hosted deployment
 
-`Dockerfile` and `Procfile` support a standard container/Render-style Flask deployment. Build from the repository root, inject environment variables through the host, run the health check at `/health`, and keep debug disabled. Streamlit Community Cloud can use `streamlit_app.py` as its entry point; confirm the full requirements install and the spaCy model availability on that host before publishing a URL.
+`Dockerfile` and `Procfile` support a standard container/Render-style Flask deployment. Build from the repository root, inject environment variables through the host, run the health check at `/health`, and keep debug disabled.
+
+### Streamlit Community Cloud
+
+Deploy `streamlit_app.py` from the repository root and select **Python 3.12** in the deployment dialog's **Advanced settings**. This project pins Python 3.12-compatible pandas and PyTorch wheels. Do not add a `runtime.txt` file: Community Cloud chooses Python from the deployment settings, not that file. If an app was already created on Python 3.14, delete it and deploy it again with Python 3.12 selected; Community Cloud cannot change an existing app's Python version in place. Confirm the full requirements install and the spaCy model availability before publishing the URL.
 
 ## First-run and operational notes
 

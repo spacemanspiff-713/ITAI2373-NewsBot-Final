@@ -96,4 +96,8 @@ This is historical, predominantly English coverage. Confidence is not truth; sen
 
 See [technical documentation](docs/technical_documentation.md), [executive summary](docs/executive_summary.md), [user guide](docs/user_guide.md), [API reference](docs/api_reference.md), [deployment guide](docs/deployment_guide.md), [individual contributions](docs/individual_contributions.md), and [AI assistance disclosure](docs/ai_assistance.md).
 
-Jason Trimble completed this project independently, including the documented technical integration work. The final project still needs a GitHub remote/push and a live Streamlit URL if the web-app bonus is claimed.
+Jason Trimble completed this project independently, including the documented technical integration work. Push the latest reviewed changes to GitHub before final submission and keep the deployed Streamlit URL available if claiming the web-app bonus.
+
+### Streamlit Community Cloud
+
+Deploy `streamlit_app.py` with **Python 3.12** selected in Community Cloud's **Advanced settings**. The pinned data-science stack is intentionally Python 3.12-compatible; Community Cloud does not use `runtime.txt` to select Python. If an existing deployment was created on Python 3.14, delete and recreate it with Python 3.12.

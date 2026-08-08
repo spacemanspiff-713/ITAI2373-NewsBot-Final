@@ -1,4 +1,6 @@
-# Tested core stack for Python 3.12. Heavy language-model packages load lazily.
+# Requires Python 3.12. On Streamlit Community Cloud, select Python 3.12 in
+# Advanced settings when creating the app; runtime.txt is not used by that host.
+# Heavy language-model packages load lazily.
 pandas==2.2.3
 numpy==1.26.4
 scipy==1.13.1
