@@ -32,6 +32,14 @@ class NewsBot2Config:
     topic_top_words: int = 12
     embedding_model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     summarization_model: str = "sshleifer/distilbart-cnn-12-6"
+    enable_transformers: bool = field(
+        default_factory=lambda: os.getenv("NEWSBOT_ENABLE_TRANSFORMERS", "0").strip().lower()
+        in {"1", "true", "yes", "on"}
+    )
+    transformer_local_files_only: bool = field(
+        default_factory=lambda: os.getenv("NEWSBOT_TRANSFORMERS_LOCAL_ONLY", "0").strip().lower()
+        in {"1", "true", "yes", "on"}
+    )
     min_summary_words: int = 25
     max_summary_words: int = 120
     translation_backend: str = field(

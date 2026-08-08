@@ -1,0 +1,4 @@
+{
+  "generated": false,
+  "reason": "TF-IDF fallback was active; rebuild after enabling the sentence-transformer model."
+}

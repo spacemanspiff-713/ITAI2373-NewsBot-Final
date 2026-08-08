@@ -28,12 +28,32 @@ class NewsBot2Evaluator:
 
     @staticmethod
     def semantic_search_metrics(results: list[list[dict]], expected_ids: list[set], k: int = 5) -> dict:
-        hits = [bool({str(item.get("article_id")) for item in returned[:k]} & expected) for returned, expected in zip(results, expected_ids)]
-        return {"hit_rate_at_k": float(np.mean(hits)) if hits else 0.0, "queries": len(hits), "k": k}
+        hits, precision, recall = [], [], []
+        for returned, expected in zip(results, expected_ids):
+            returned_ids = {str(item.get("article_id")) for item in returned[:k]}
+            overlap = returned_ids & {str(item) for item in expected}
+            hits.append(bool(overlap))
+            precision.append(len(overlap) / max(len(returned_ids), 1))
+            recall.append(len(overlap) / max(len(expected), 1))
+        return {
+            "precision_at_k": float(np.mean(precision)) if precision else 0.0,
+            "recall_at_k": float(np.mean(recall)) if recall else 0.0,
+            "hit_rate_at_k": float(np.mean(hits)) if hits else 0.0,
+            "queries": len(hits), "k": k,
+        }
 
     @staticmethod
     def conversation_accuracy(predictions: list[str], expected: list[str]) -> dict:
         return {"intent_accuracy": float(accuracy_score(expected, predictions)) if expected else 0.0, "queries": len(expected)}
+
+    @staticmethod
+    def parameter_accuracy(predicted_rows: list[dict], expected_rows: list[dict], fields=("category", "sentiment", "entities")) -> dict:
+        scores = {}
+        for field in fields:
+            matches = [predicted.get(field) == expected.get(field) for predicted, expected in zip(predicted_rows, expected_rows) if field in expected]
+            scores[field] = float(np.mean(matches)) if matches else None
+        measured = [score for score in scores.values() if score is not None]
+        return {"slot_accuracy": float(np.mean(measured)) if measured else 0.0, "by_field": scores, "queries": len(expected_rows)}
 
     def generate_evaluation_report(self, path=None) -> dict:
         if path is not None: export_json(self.results, path)

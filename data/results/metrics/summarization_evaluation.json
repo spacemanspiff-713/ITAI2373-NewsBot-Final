@@ -1,0 +1,15 @@
+{
+  "examples": 1,
+  "backend": {
+    "backend": "extractive",
+    "model": null,
+    "transformer_requested": false,
+    "warning": null
+  },
+  "mean": {
+    "compression_ratio": 0.4936708860759494,
+    "flesch_reading_ease": 35.29,
+    "entity_preservation_proxy": 0.6666666666666666,
+    "rougeL": 0.2033898305084746
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "intent_accuracy": 1.0,
+  "slot_accuracy": 1.0,
+  "slot_accuracy_by_field": {
+    "category": 1.0,
+    "sentiment": 1.0,
+    "entities": 1.0,
+    "comparison_targets": 1.0
+  },
+  "queries": 9
+}

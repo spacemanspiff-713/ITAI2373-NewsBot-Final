@@ -1,23 +1,115 @@
-"""Generate runnable notebook shells and source documentation from the implemented APIs."""
+"""Generate the seven instructor-named, reusable-module NewsBot notebooks."""
+
+from __future__ import annotations
+
 from pathlib import Path
+
 import nbformat as nbf
 
-ROOT=Path(__file__).resolve().parents[1]
-NB=ROOT/"notebooks"; DOC=ROOT/"docs"
-notebooks=[("01_Data_Exploration","Data exploration","from src.data_processing.data_validator import load_news_dataset, DatasetValidator\ndf=load_news_dataset()\nDatasetValidator().validate(df).to_dict()"),("02_Advanced_Classification","Advanced classification","from src.analysis.classifier import AdvancedNewsClassifier\nfrom src.data_processing.data_validator import load_news_dataset\ndf=load_news_dataset(); model=AdvancedNewsClassifier().fit(df.full_text,df.category); model.evaluation_results"),("03_Topic_Modeling","LDA and NMF topic modeling","from src.analysis.topic_modeler import TopicDiscoveryEngine\nfrom src.data_processing.data_validator import load_news_dataset\ndf=load_news_dataset(); topics=TopicDiscoveryEngine().fit_topics(df.full_text,df.date); topics.compare_models()"),("04_Language_Models","Summarization and semantic search","from src.language_models import IntelligentSummarizer, SemanticSearchEngine\nsummary=IntelligentSummarizer().summarize_article('The city announced a new public health plan. Officials said it starts next week.'); summary"),("05_Multilingual_Analysis","Multilingual demonstration","import json\nfrom src.multilingual import LanguageDetector, Translator\ndemo=json.load(open('data/demo/multilingual_demo.json')); [(x['id'],LanguageDetector().detect_language(x['text'])) for x in demo]"),("06_Conversational_Interface","Grounded conversational interface","from src.system import NewsBot2IntegratedSystem\nsystem=NewsBot2IntegratedSystem().fit(); system.query_interface('Show me tech news')"),("07_System_Integration","Integrated NewsBot 2.0 capstone","from src.system import NewsBot2IntegratedSystem\nsystem=NewsBot2IntegratedSystem().fit(); system.comprehensive_analysis('A software company announced an artificial intelligence product in California.')")]
-for stem,title,code in notebooks:
- n=nbf.v4.new_notebook(); n.cells=[nbf.v4.new_markdown_cell(f"# NewsBot 2.0 — {title}\n\nThis notebook imports reusable `src/` modules. Run it from the repository root after installing requirements."),nbf.v4.new_code_cell(code),nbf.v4.new_markdown_cell("## Limitations and ethics\nThe corpus is historical and predominantly English. Model confidence is not truth; sentiment, NER, translation, and semantic similarity can be wrong. Internal corroboration is not fact-checking.")]; nbf.write(n,NB/f"{stem}.ipynb")
-docs={
-"technical_documentation.md":"# Technical Documentation\n\n## Architecture\nNewsBot 2.0 refactors the completed midterm’s deterministic HuffPost sampling, NLTK preprocessing, TF-IDF comparison, VADER sentiment, spaCy NER, evaluation, and visualizations into modules. New layers add LDA/NMF, topic trends, graph construction, lazy transformer summarization, semantic search, multilingual demo processing, and grounded conversation.\n\n## Data flow\nCSV → validation/normalization → preprocessing → classifier/topic/sentiment/NER/search → integrated JSON report. Components fail independently and return warnings.\n\n## Evaluation and limits\nSee `data/results/metrics`. The main corpus is historical English headline/description text, not full articles. Confidence is not truth and graph co-occurrence is not a real-world relationship.\n\n## Security\nEnvironment variables hold secrets. No raw dataset, model cache, or `.env` is committed.",
-"executive_summary.md":"# Executive Summary\n\nNewsBot 2.0 helps editors and analysts route historical news coverage, inspect themes and tone, find related items, and query the local corpus. Potential value is reduced first-pass review time; ROI is an assumption: `(hours saved × loaded hourly cost) − operating cost`, not an audited result. It should support—not replace—editorial judgment.\n\nRecommendation: use as a transparent research and triage companion, with human review for low-confidence, sensitive, multilingual, or factual claims.",
-"user_guide.md":"# User Guide\n\nRun `./.venv/bin/python run.py` for the local service or open notebooks in order. Paste article text for analysis; confidence is a routing score, not proof. Use queries such as `Show me tech news`, then `What about negative ones?`; dates are relative to the historical dataset maximum where relevant. Multilingual examples live in `data/demo`.\n\nTroubleshooting: install requirements, download `en_core_web_sm`, and expect first-run optional model downloads only when explicitly enabled.",
-"api_reference.md":"# API Reference\n\n`AdvancedNewsClassifier`: fit, predict, predict_with_confidence, explain_prediction, evaluate, save/load. `TopicDiscoveryEngine`: fit_topics, get_topic_words, get_article_topics, compare_models, track_topic_trends. `SentimentEvolutionTracker`: analyze, track_sentiment_over_time, detect_sentiment_anomalies. `EntityRelationshipMapper`: extract_entities, extract_relationships, build_knowledge_graph. `NewsBot2IntegratedSystem`: fit, comprehensive_analysis, batch_analysis, query_interface, generate_insights_report.",
-"deployment_guide.md":"# Deployment Guide\n\n```bash\npython3 -m venv .venv\n.venv/bin/pip install -r requirements.txt\n.venv/bin/python -m spacy download en_core_web_sm\n.venv/bin/python -m pytest -q\n```\n\nUse CPU PyTorch by default. `gunicorn 'web.app:create_app()'` serves the optional Flask UI. Set `NEWSBOT_SECRET_KEY`; debug is off by default. `/health` is the deployment health check.",
-"individual_contributions.md":"# Individual Contributions\n\nJason Trimble: extended the completed NewsBot architecture, data pipeline, model evaluation, integrated NLP modules, tests, documentation, and local deployment assets.\n\nTODO: Confirm group name and teammate contribution details before final submission.",
-"ai_assistance.md":"# AI Assistance Disclosure\n\nAI assistance supported planning, debugging, documentation, and implementation iteration. Final code was tested locally. External packages/models are documented in requirements; outputs requiring external models or translation are not presented as independently verified facts.",
-"reflective_journal_draft.md":"# Reflective Journal Draft\n\nThis project evolved a notebook prototype into a modular system. The main challenge was preserving a reproducible midterm pipeline while adding heavier components without making local operation fragile. I learned to prefer transparent fallbacks, measured comparisons, error isolation, and honest limits over impressive but unreliable claims.\n\nThe business value is faster exploration of historical coverage, not automatic editorial truth. Ethical risks include source bias, historical drift, sentiment/NER errors, translation loss, privacy when adapted to private documents, and false confidence. Future work includes human evaluation, stronger multilingual benchmark data, and a carefully scoped transformer study.\n\nTODO: Confirm group name and teammate collaboration details before submission.",
-"presentation_outline.md":"# Presentation Outline\n\n1 Title · 2 business problem · 3 midterm to final evolution · 4 architecture · 5 dataset · 6 classification · 7 topics · 8 sentiment/entities · 9 language models · 10 multilingual demo · 11 conversation · 12 integrated demo · 13 evaluation · 14 business value · 15 limitations/ethics · 16 contribution/Q&A.\n\nDemo: run one article analysis, search Tech coverage, show a follow-up, then explain that all results are historical local-corpus evidence.",
-"references.md":"# References\n\nHuffPost News Category Dataset; scikit-learn, spaCy, VADER Sentiment, Sentence-Transformers, Hugging Face Transformers, Flask documentation. Cite package/model pages in final PDF exports."
-}
-for name,body in docs.items(): (DOC/name).write_text(body+"\n",encoding="utf-8")
-print("Generated notebooks and documentation sources.")
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTEBOOKS = ROOT / "notebooks"
+
+
+def markdown(text):
+    return nbf.v4.new_markdown_cell(text)
+
+
+def code(text):
+    return nbf.v4.new_code_cell(text)
+
+
+def build_notebook(title, goal, sections):
+    notebook = nbf.v4.new_notebook()
+    notebook.metadata = {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}}
+    notebook.cells = [
+        markdown(f"# NewsBot Intelligence System 2.0 — {title}\n\n## Goal\n{goal}\n\nThis notebook imports reusable project modules rather than duplicating implementation logic."),
+    ]
+    for heading, body, cell in sections:
+        notebook.cells.extend([markdown(f"## {heading}\n{body}"), code(cell)])
+    notebook.cells.append(markdown("## Limitations and ethics\nThe source corpus is historical and predominantly English. Confidence is not truth; sentiment, topics, named entities, translation, summaries, and semantic similarity can be wrong. Entity co-occurrence is not a proven real-world relationship. Internal corpus corroboration is not independent fact-checking."))
+    return notebook
+
+
+def generate():
+    NOTEBOOKS.mkdir(parents=True, exist_ok=True)
+    notebooks = {
+        "01_Data_Exploration.ipynb": build_notebook(
+            "01 Data Exploration",
+            "Validate the preserved midterm sample and frame its business and methodological limits.",
+            [
+                ("Load and validate", "The final uses the unchanged six-category midterm sample.", "from src.data_processing.data_validator import DatasetValidator, load_news_dataset\ndf = load_news_dataset()\nvalidation = DatasetValidator().validate(df)\nvalidation.to_dict()"),
+                ("Coverage profile", "Inspect category balance, date coverage, length, and duplicate signals before modelling.", "import pandas as pd\npd.DataFrame({'rows':[len(df)], 'date_min':[str(df.date.min().date())], 'date_max':[str(df.date.max().date())], 'duplicate_rows':[df.duplicated().sum()], 'mean_words':[df.full_text.str.split().str.len().mean()]})"),
+                ("Category and date evidence", "These figures are generated by the reproducible Phase 2 pipeline.", "from pathlib import Path\nfrom IPython.display import Image, display\nfigures = Path('data/results/figures')\ndisplay(Image(filename=str(figures / 'category_distribution.png')))\ndisplay(Image(filename=str(figures / 'date_distribution.png')))"),
+                ("Sample records and framing", "This is historical headline/description content, not full articles or live news.", "df[['article_id','date','category','title','short_description']].sample(5, random_state=42).sort_values('date')"),
+            ],
+        ),
+        "02_Advanced_Classification.ipynb": build_notebook(
+            "02 Advanced Classification",
+            "Compare the preserved midterm baseline to enhanced candidates and inspect confidence-aware outputs.",
+            [
+                ("Fit comparable models", "A fixed seed and stratified holdout make the comparison reproducible.", "from src.analysis.classifier import AdvancedNewsClassifier\nfrom src.data_processing.data_validator import load_news_dataset\ndf = load_news_dataset()\nclassifier = AdvancedNewsClassifier().fit(df.full_text, df.category)\nclassifier.evaluation_results['model_comparison']"),
+                ("Held-out metrics and calibration", "Macro F1 is appropriate for the balanced six-category sample; calibration is top-label ECE.", "{key: classifier.evaluation_results[key] for key in ['selected_model','accuracy','macro_precision','macro_recall','macro_f1','weighted_f1','calibration']}"),
+                ("Confidence and explainability", "Explanations are only coefficient-based when the selected model is Logistic Regression.", "example = 'A technology company introduced an artificial intelligence software tool for small businesses.'\nclassifier.predict_with_confidence(example), classifier.explain_prediction(example)"),
+                ("Visual evidence", "Read the confusion matrix alongside classes with overlapping language.", "from IPython.display import Image, display\nfrom pathlib import Path\nfigures = Path('data/results/figures')\ndisplay(Image(filename=str(figures / 'model_comparison.png')))\ndisplay(Image(filename=str(figures / 'classification_confusion_matrix.png')))"),
+            ],
+        ),
+        "03_Topic_Modeling.ipynb": build_notebook(
+            "03 Topic Modeling",
+            "Discover topics with LDA and NMF, compare diagnostics, and inspect historical topic movement.",
+            [
+                ("Train LDA and NMF", "Both models use the same corpus and fixed random state; topic labels require human interpretation.", "from src.analysis.topic_modeler import TopicDiscoveryEngine\nfrom src.data_processing.data_validator import load_news_dataset\ndf = load_news_dataset()\ntopics = TopicDiscoveryEngine(n_topics=8).fit_topics(df.full_text, df.date)\ntopics.compare_models()"),
+                ("Inspect topic words", "Top words are evidence of lexical themes, not authoritative human labels.", "{'lda_topic_0': topics.get_topic_words(0, model='lda'), 'nmf_topic_0': topics.get_topic_words(0, model='nmf')}"),
+                ("Topic evolution", "Annual trends describe this local historical sample; they are not live trends.", "trends = topics.track_topic_trends()\n{'emerging': trends['emerging_topics'], 'declining': trends['declining_topics'], 'spikes': trends['spikes']}"),
+                ("Visual evidence", "The reported coherence value is a lexical-overlap proxy and must be read with qualitative review.", "from IPython.display import Image, display\nfrom pathlib import Path\nfigures = Path('data/results/figures')\nfor name in ['topic_words_lda.png','topic_words_nmf.png','topic_evolution.png']:\n    display(Image(filename=str(figures / name)))"),
+            ],
+        ),
+        "04_Language_Models.ipynb": build_notebook(
+            "04 Language Models and Retrieval",
+            "Demonstrate summary fallbacks, quality diagnostics, retrieval, related content, and grounded enhancement.",
+            [
+                ("Summarization paths", "The default uses a tested extractive path. Set NEWSBOT_ENABLE_TRANSFORMERS=1 to opt into the lazy pretrained model.", "from src.language_models import IntelligentSummarizer, SemanticSearchEngine\nfrom src.data_processing.data_validator import load_news_dataset\nsummarizer = IntelligentSummarizer()\ntext = 'The city announced new public health measures after a heat wave. Officials said cooling centers would open and residents should check on vulnerable neighbors. The measures start this weekend.'\nsummary = summarizer.summarize_article(text)\n{'summary': summary, 'status': summarizer.backend_status(), 'quality': summarizer.assess_summary_quality(text, summary)}"),
+                ("Multi-document summary", "Short corpus records are combined for a more meaningful demonstration.", "df = load_news_dataset()\nrecords = df[df.category == 'TECH'].head(4).to_dict('records')\nsummarizer.summarize_multiple_articles(records, focus_topic='technology')"),
+                ("Semantic retrieval", "The active backend is disclosed; relatedness is not factual agreement.", "search = SemanticSearchEngine().build_index(df.full_text, df[['article_id','title','category','date']].to_dict('records'))\nresults = search.semantic_search('artificial intelligence software businesses', 5)\n{'backend': search.backend_status(), 'results': [{k:v for k,v in row.items() if k in ['article_id','title','category','score','retrieval_backend']} for row in results], 'expanded_query': search.expand_query('artificial intelligence software businesses', results)}"),
+                ("Evaluation evidence", "Summary and retrieval metrics are small authored tests, not a production benchmark.", "import json\nfrom pathlib import Path\nmetrics = Path('data/results/metrics')\n{file.name: json.loads(file.read_text()) for file in [metrics/'summarization_evaluation.json', metrics/'semantic_search_evaluation.json']}"),
+            ],
+        ),
+        "05_Multilingual_Analysis.ipynb": build_notebook(
+            "05 Multilingual Analysis",
+            "Use separate paired demonstrations to show language detection, translation provenance, and careful cross-language comparison.",
+            [
+                ("Load authored paired examples", "The examples are explicitly separate from the English historical corpus.", "import json\nfrom pathlib import Path\ndemo = json.loads(Path('data/demo/multilingual_demo.json').read_text())\ndemo"),
+                ("Detection and translation", "Each translation declares the backend and whether it is available.", "from src.multilingual import LanguageDetector, Translator\ndetector, translator = LanguageDetector(), Translator()\n[{'id': item['id'], 'detected': detector.detect_language(item['text']), 'translation': translator.translate_text(item['text'], 'en', item['language'])} for item in demo]"),
+                ("Cross-language comparison", "This reports a coverage/framing indicator, not cultural understanding.", "from src.language_models import SemanticSearchEngine\nfrom src.multilingual import CrossLingualAnalyzer\nanalyzer = CrossLingualAnalyzer(SemanticSearchEngine())\nanalyzer.cross_lingual_similarity(demo[1]['text'], demo[0]['english_reference'])"),
+                ("Evaluation and limits", "Paired examples can demonstrate workflow quality but cannot generalize to all languages or writing styles.", "import pandas as pd\npd.read_csv('data/results/tables/multilingual_evaluation.csv')"),
+            ],
+        ),
+        "06_Conversational_Interface.ipynb": build_notebook(
+            "06 Conversational Interface",
+            "Evaluate intent and slot handling, grounded response templates, and follow-up context.",
+            [
+                ("Intent and parameter evaluation", "The compact authored set covers all required intents and reports sample size.", "import pandas as pd\npd.read_csv('data/results/tables/conversation_eval.csv')"),
+                ("Initialize the integrated query system", "Responses cite local records and never claim live-news access.", "from src.system import NewsBot2IntegratedSystem\nsystem = NewsBot2IntegratedSystem().fit()\nsystem.query_interface('Show me tech news')"),
+                ("Multi-turn context", "The second query inherits TECH because it does not name a new category.", "first = system.query_interface('Show me tech news')\nsecond = system.query_interface('What about negative ones?')\n{'first_filters': first['applied_filters'], 'second_filters': second['applied_filters'], 'second_response': second['response']}"),
+                ("Intent-specific examples", "Each response remains grounded in the stored corpus or explicitly states an unavailable capability.", "queries = ['Summarize politics coverage', 'How have topic trends changed?', 'Compare tech and business', 'Find articles about Apple', 'Find similar articles', 'Help']\n[{query: system.query_interface(query)['response']} for query in queries]"),
+            ],
+        ),
+        "07_System_Integration.ipynb": build_notebook(
+            "07 System Integration",
+            "Run the full capstone pipeline on new texts, batch input, corpus queries, and multilingual examples.",
+            [
+                ("Initialize once", "Timing includes the local integrated components after model/index fitting.", "from src.system import NewsBot2IntegratedSystem\nsystem = NewsBot2IntegratedSystem().fit()\nlen(system.dataframe), system.search_engine.backend_status()"),
+                ("Analyze new article texts", "These short inputs are newly authored for the demo and are not training records.", "new_articles = ['A software company announced an artificial intelligence product for small businesses in California.', 'City officials opened cooling centers after a dangerous heat wave and urged residents to check on neighbors.', 'A local sports club won a championship after a close game and celebrated with fans.']\nanalyses = [system.comprehensive_analysis(article) for article in new_articles]\n[{'category': item['classification']['primary_category'], 'sentiment': item['sentiment']['label'], 'runtime': item['runtime'], 'seconds': item['statistics']['processing_seconds']} for item in analyses]"),
+                ("Batch report and conversational query", "Batch size is capped and responses identify historical scope.", "report = system.generate_insights_report(new_articles, report_type='summary')\nquery = system.query_interface('Show me positive tech news from this week')\n{'batch_report': report, 'query_response': query['response'], 'query_note': query['intent']['parameters'].get('timeframe_note')}"),
+                ("Multilingual integrated analysis", "The translation field records availability and backend rather than hiding a fallback.", "spanish = 'La empresa tecnológica anunció una nueva herramienta de inteligencia artificial para pequeñas empresas.'\nmultilingual_result = system.comprehensive_analysis(spanish)\n{'language': multilingual_result['language'], 'translation': multilingual_result['translation'], 'warnings': multilingual_result['warnings']}"),
+                ("Final evidence and reflection", "Use these stored metrics in the report and presentation, including their limitations.", "import json\nfrom pathlib import Path\nmetrics = json.loads((Path('data/results/metrics/evaluation_summary.json')).read_text())\n{key: metrics[key] for key in ['classification','semantic_search','multilingual','conversation','runtime_backends']}"),
+            ],
+        ),
+    }
+    for name, notebook in notebooks.items():
+        nbf.write(notebook, NOTEBOOKS / name)
+    print(f"Generated {len(notebooks)} required notebooks.")
+
+
+if __name__ == "__main__":
+    generate()

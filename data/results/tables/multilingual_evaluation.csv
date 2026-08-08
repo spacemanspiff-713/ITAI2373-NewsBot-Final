@@ -1,0 +1,7 @@
+id,expected_language,detected_language,detection_correct,detection_confidence,translation_available,translation_backend,translation_similarity,similarity_backend,cross_lingual_retrieval_success
+en_001,en,en,1.0,0.9999954730486496,True,identity,1.0,tfidf,1.0
+es_001,es,es,1.0,0.9999941005356101,True,authored_demo,1.0,tfidf,1.0
+fr_001,fr,fr,1.0,0.9999959539819128,True,authored_demo,1.0,tfidf,1.0
+en_002,en,en,1.0,0.9999960035214895,True,identity,1.0,tfidf,1.0
+es_002,es,es,1.0,0.9999959734644626,True,authored_demo,1.0,tfidf,1.0
+fr_002,fr,fr,1.0,0.9999982749155261,True,authored_demo,1.0,tfidf,1.0

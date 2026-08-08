@@ -1,0 +1,8 @@
+{
+  "examples": 6,
+  "language_detection_accuracy": 1.0,
+  "translation_availability": 1.0,
+  "mean_translation_similarity": 1.0,
+  "cross_lingual_retrieval_success": 1.0,
+  "note": "Spanish/French examples are authored paired demonstrations; this is not a broad machine-translation benchmark."
+}

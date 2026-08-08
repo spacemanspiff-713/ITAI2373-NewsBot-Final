@@ -9,3 +9,8 @@ def test_language_detection_and_demo_translation():
 
 def test_cross_language_comparison_is_careful():
  analyzer=CrossLingualAnalyzer(SemanticSearchEngine()); assert "coverage_depth" in analyzer.compare_coverage({"en":["a"],"es":["b"]})
+
+def test_cross_language_similarity_preserves_translation_provenance():
+ analyzer=CrossLingualAnalyzer(SemanticSearchEngine())
+ result=analyzer.cross_lingual_similarity("La empresa tecnológica anunció una nueva herramienta de inteligencia artificial para pequeñas empresas.","The technology company announced a new artificial intelligence tool for small businesses.")
+ assert result["similarity"] >= 0 and result["left_translation"]["available"]

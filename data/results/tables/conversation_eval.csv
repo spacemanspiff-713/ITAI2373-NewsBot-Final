@@ -1,7 +1,10 @@
-query,expected_intent,predicted_intent
-show tech news,search,search
-summarize politics coverage,summarize,summarize
-what is the sentiment,sentiment,sentiment
-topic trends,topic_trend,topic_trend
-compare Apple and Google coverage,compare,compare
-help,help,help
+query,expected_intent,predicted_intent,intent_correct,intent_confidence,slot_matches
+show me tech news,search,search,1.0,0.75,"{""category"": true}"
+summarize politics coverage,summarize,summarize,1.0,0.75,"{""category"": true}"
+show negative technology stories,sentiment,sentiment,1.0,0.75,"{""category"": true, ""sentiment"": true}"
+how have topic trends changed,topic_trend,topic_trend,1.0,0.75,{}
+find articles about Apple,entity_lookup,entity_lookup,1.0,0.75,"{""entities"": true}"
+compare tech and business,compare,compare,1.0,0.75,"{""comparison_targets"": true}"
+find similar articles,similar_articles,similar_articles,1.0,0.75,{}
+help,help,help,1.0,0.75,{}
+show wellness news from this week,search,search,1.0,0.75,"{""category"": true, ""date_start"": true}"

@@ -1,0 +1,21 @@
+{
+  "semantic_search": [
+    {"query": "software artificial intelligence startups", "expected_category": "TECH"},
+    {"query": "team championship game player", "expected_category": "SPORTS"},
+    {"query": "health sleep doctor wellbeing", "expected_category": "WELLNESS"},
+    {"query": "election government policy campaign", "expected_category": "POLITICS"},
+    {"query": "company investors market economy", "expected_category": "BUSINESS"},
+    {"query": "movie music celebrity television", "expected_category": "ENTERTAINMENT"}
+  ],
+  "conversation": [
+    {"query": "show me tech news", "intent": "search", "parameters": {"category": "TECH"}},
+    {"query": "summarize politics coverage", "intent": "summarize", "parameters": {"category": "POLITICS"}},
+    {"query": "show negative technology stories", "intent": "sentiment", "parameters": {"category": "TECH", "sentiment": "negative"}},
+    {"query": "how have topic trends changed", "intent": "topic_trend", "parameters": {}},
+    {"query": "find articles about Apple", "intent": "entity_lookup", "parameters": {"entities": ["Apple"]}},
+    {"query": "compare tech and business", "intent": "compare", "parameters": {"comparison_targets": ["tech", "business"]}},
+    {"query": "find similar articles", "intent": "similar_articles", "parameters": {}},
+    {"query": "help", "intent": "help", "parameters": {}},
+    {"query": "show wellness news from this week", "intent": "search", "parameters": {"category": "WELLNESS", "date_start": "relative"}}
+  ]
+}

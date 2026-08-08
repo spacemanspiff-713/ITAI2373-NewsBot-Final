@@ -74,7 +74,10 @@ class AdvancedNewsClassifier:
                 fitted[name] = candidate
             best = max(comparisons, key=lambda item: (item["macro_f1"], item["accuracy"]))
             self.model_name = best["model"]
-            self.evaluation_results = self._metrics(test_y, fitted[self.model_name].predict(test_X), comparisons)
+            self.evaluation_results = self._metrics(
+                test_y, fitted[self.model_name].predict(test_X), comparisons,
+                fitted[self.model_name].predict_proba(test_X),
+            )
             self.model = candidates[self.model_name].fit(X, y)
         else:
             self.model_name = "Logistic Regression (enhanced)"
@@ -82,7 +85,27 @@ class AdvancedNewsClassifier:
             self.evaluation_results = {"model_comparison": [], "selection_note": "Small corpus: fitted stable probabilistic enhanced model without holdout comparison."}
         return self
 
-    def _metrics(self, y_true: np.ndarray, prediction: np.ndarray, comparisons: list[dict]) -> dict:
+    @staticmethod
+    def _calibration_metrics(y_true: np.ndarray, prediction: np.ndarray, probabilities: np.ndarray | None) -> dict:
+        """Report transparent top-label calibration rather than a misleading binary score."""
+        if probabilities is None or not len(y_true):
+            return {"expected_calibration_error": None, "mean_confidence": None, "top_label_accuracy": None}
+        confidence = probabilities.max(axis=1)
+        correct = (prediction == y_true).astype(float)
+        bins = np.linspace(0, 1, 11)
+        ece = 0.0
+        for lower, upper in zip(bins[:-1], bins[1:]):
+            mask = (confidence >= lower) & ((confidence < upper) if upper < 1 else (confidence <= upper))
+            if mask.any():
+                ece += abs(float(confidence[mask].mean()) - float(correct[mask].mean())) * float(mask.mean())
+        return {
+            "expected_calibration_error": float(ece),
+            "mean_confidence": float(confidence.mean()),
+            "top_label_accuracy": float(correct.mean()),
+            "interpretation": "Top-label expected calibration error on the held-out split; lower is better.",
+        }
+
+    def _metrics(self, y_true: np.ndarray, prediction: np.ndarray, comparisons: list[dict], probabilities: np.ndarray | None = None) -> dict:
         p, r, f, _ = precision_recall_fscore_support(y_true, prediction, average="macro", zero_division=0)
         return {
             "selected_model": self.model_name, "accuracy": float(accuracy_score(y_true, prediction)),
@@ -91,6 +114,7 @@ class AdvancedNewsClassifier:
             "per_class": classification_report(y_true, prediction, output_dict=True, zero_division=0),
             "confusion_matrix": confusion_matrix(y_true, prediction, labels=sorted(set(y_true))).tolist(),
             "labels": sorted(set(y_true)), "model_comparison": comparisons,
+            "calibration": self._calibration_metrics(y_true, prediction, probabilities),
         }
 
     def _require_model(self) -> Pipeline:
@@ -128,9 +152,12 @@ class AdvancedNewsClassifier:
         return {**result, "top_features": [{"feature": str(names[i]), "contribution": float(scores[i])} for i in indices if scores[i] > 0], "explanation_note": "Linear feature association, not causal reasoning."}
 
     def evaluate(self, texts: Iterable[object], labels: Iterable[str]) -> dict:
+        texts = list(texts)
         y = np.asarray(list(labels), dtype=str)
         prediction = np.asarray(self.predict(texts), dtype=str)
-        return self._metrics(y, prediction, [])
+        model = self._require_model()
+        probabilities = model.predict_proba(self.preprocessor.preprocess_many(texts))
+        return self._metrics(y, prediction, [], probabilities)
 
     def save(self, path: str | Path) -> None:
         joblib.dump(self, Path(path))

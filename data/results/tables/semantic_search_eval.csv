@@ -1,0 +1,7 @@
+query,expected_category,top_category,precision_at_1,precision_at_5,hit_at_5,retrieval_backend
+software artificial intelligence startups,TECH,TECH,1.0,0.4,1.0,tfidf
+team championship game player,SPORTS,SPORTS,1.0,1.0,1.0,tfidf
+health sleep doctor wellbeing,WELLNESS,WELLNESS,1.0,1.0,1.0,tfidf
+election government policy campaign,POLITICS,POLITICS,1.0,0.8,1.0,tfidf
+company investors market economy,BUSINESS,TECH,0.0,0.6,1.0,tfidf
+movie music celebrity television,ENTERTAINMENT,WELLNESS,0.0,0.6,1.0,tfidf

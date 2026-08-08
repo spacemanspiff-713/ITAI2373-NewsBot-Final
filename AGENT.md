@@ -87,14 +87,14 @@ Some dates in the instructor PDF are clearly template/legacy dates and conflict 
 
 The current assignment page is more authoritative for submission timing.
 
-The naming instructions also contain a minor inconsistency for the reflective journal. Follow the explicit detailed convention:
+For this independently completed project, use the following final artifact names:
 
 ```text
-FP_TechnicalDoc_[SubmitterName]_[GroupName]_ITAI2373.pdf
-FP_ExecutiveSummary_[SubmitterName]_[GroupName]_ITAI2373.pdf
-FP_Presentation_[SubmitterName]_[GroupName]_ITAI2373.pptx
-FP_VideoPresentation_[SubmitterName]_[GroupName]_ITAI2373.mp4
-FP_ReflectiveJournal_[GroupName]_ITAI2373.pdf
+FP_TechnicalDoc_JasonTrimble_JasonTrimble_ITAI2373.pdf
+FP_ExecutiveSummary_JasonTrimble_JasonTrimble_ITAI2373.pdf
+FP_Presentation_JasonTrimble_JasonTrimble_ITAI2373.pptx
+FP_VideoPresentation_JasonTrimble_JasonTrimble_ITAI2373.mp4
+FP_ReflectiveJournal_JasonTrimble_ITAI2373.pdf
 ```
 
 Known submitter name:
@@ -103,15 +103,7 @@ Known submitter name:
 JasonTrimble
 ```
 
-Do **not** invent a group name or team members. Use a clearly searchable placeholder:
-
-```text
-TODO_GROUP_NAME
-```
-
-until the user provides the real group name.
-
-If this final is being completed solo despite the assignment's team wording, do not silently change the naming convention. Leave the group placeholder and flag it in the final status report.
+This project is independently completed by Jason Trimble. Do not imply shared work.
 
 ---
 
@@ -1627,7 +1619,7 @@ Must cover:
 This Markdown will later become:
 
 ```text
-FP_TechnicalDoc_JasonTrimble_TODO_GROUP_NAME_ITAI2373.pdf
+FP_TechnicalDoc_JasonTrimble_JasonTrimble_ITAI2373.pdf
 ```
 
 ## `docs/executive_summary.md`
@@ -1654,7 +1646,7 @@ Be careful with ROI:
 This Markdown will later become:
 
 ```text
-FP_ExecutiveSummary_JasonTrimble_TODO_GROUP_NAME_ITAI2373.pdf
+FP_ExecutiveSummary_JasonTrimble_JasonTrimble_ITAI2373.pdf
 ```
 
 ## `docs/user_guide.md`
@@ -1688,15 +1680,7 @@ Include:
 
 ## `docs/individual_contributions.md`
 
-Do not invent collaborators.
-
 Describe Jason's actual technical contribution areas based on what was built.
-
-If team details are unknown, include:
-
-```text
-TODO: Confirm group name and teammate contribution details before final submission.
-```
 
 ## `docs/ai_assistance.md`
 
@@ -1711,7 +1695,7 @@ Do not hide AI assistance.
 ## `docs/reflective_journal_draft.md`
 
 Create a strong 3-page-content draft covering:
-- collaboration / project management
+- independent project management
 - individual contributions
 - integration challenges
 - lessons learned
@@ -1720,7 +1704,7 @@ Create a strong 3-page-content draft covering:
 - future improvements
 - professional development
 
-Do not invent team interactions.
+Do not invent interactions that did not occur.
 
 ## `docs/presentation_outline.md`
 
@@ -1761,10 +1745,10 @@ The final polished PDFs and presentation can be produced separately from the com
 Required eventual filenames:
 
 ```text
-FP_TechnicalDoc_JasonTrimble_TODO_GROUP_NAME_ITAI2373.pdf
-FP_ExecutiveSummary_JasonTrimble_TODO_GROUP_NAME_ITAI2373.pdf
-FP_Presentation_JasonTrimble_TODO_GROUP_NAME_ITAI2373.pptx
-FP_ReflectiveJournal_TODO_GROUP_NAME_ITAI2373.pdf
+FP_TechnicalDoc_JasonTrimble_JasonTrimble_ITAI2373.pdf
+FP_ExecutiveSummary_JasonTrimble_JasonTrimble_ITAI2373.pdf
+FP_Presentation_JasonTrimble_JasonTrimble_ITAI2373.pptx
+FP_ReflectiveJournal_JasonTrimble_ITAI2373.pdf
 ```
 
 ---
@@ -1988,7 +1972,7 @@ Follow this order exactly unless a concrete technical blocker requires a change.
 - inspect Git status
 - verify no secrets
 - verify no absolute README links
-- verify all TODO placeholders except `TODO_GROUP_NAME`
+- verify no placeholder text remains
 - verify required outputs exist
 
 ---
@@ -2138,7 +2122,6 @@ Return a concise report with:
 - ...
 
 ## Manual Items Still Needed
-- group name
 - polished PDFs
 - final presentation export
 - live deployment URL, if required

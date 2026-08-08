@@ -1,3 +1,7 @@
 [
-  {"id":"summary_001","text":"The city announced new public health measures after a heat wave. Officials said cooling centers would open and residents should check on vulnerable neighbors. The measures start this weekend.","reference":"City officials will open cooling centers and begin new heat-wave public health measures this weekend."}
+  {
+    "id": "summary_001",
+    "text": "The city announced a new public health response after a record heat wave. Officials said cooling centers will open at libraries and recreation buildings across the city. Residents were asked to check on older neighbors and people without reliable air conditioning. Transit agencies will extend evening service so visitors can reach the centers. Hospitals reported an increase in heat-related visits but said emergency departments remain open. The measures begin this weekend and will be reviewed after the forecast improves.",
+    "reference": "City officials will open cooling centers and begin a weekend heat-response plan that asks residents to protect vulnerable neighbors."
+  }
 ]

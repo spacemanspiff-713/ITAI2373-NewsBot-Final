@@ -1,0 +1,2 @@
+id,summary,compression_ratio,summary_words,length_within_target,flesch_reading_ease,entity_preservation_proxy,backend,rougeL
+summary_001,Officials said cooling centers will open at libraries and recreation buildings across the city. Transit agencies will extend evening service so visitors can reach the centers. The measures begin this weekend and will be reviewed after the forecast improves.,0.4936708860759494,39,True,35.29,0.6666666666666666,extractive,0.2033898305084746

@@ -1,5 +1,7 @@
 {
-  "precision_at_1": 1.0,
-  "queries": 3,
-  "note": "Small authored relevance set."
+  "precision_at_1": 0.6666666666666666,
+  "precision_at_5": 0.7333333333333334,
+  "hit_rate_at_5": 1.0,
+  "queries": 6,
+  "note": "Category-based authored relevance evaluation; it measures topical retrieval, not factual agreement."
 }

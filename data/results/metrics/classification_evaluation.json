@@ -133,5 +133,11 @@
       "macro_f1": 0.707099026541916,
       "weighted_f1": 0.707099026541916
     }
-  ]
+  ],
+  "calibration": {
+    "expected_calibration_error": 0.3748121538866589,
+    "mean_confidence": 0.33907673500223,
+    "top_label_accuracy": 0.7138888888888889,
+    "interpretation": "Top-label expected calibration error on the held-out split; lower is better."
+  }
 }
