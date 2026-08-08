@@ -1,6 +1,6 @@
 # NewsBot Intelligence System 2.0
 
-Streamlit Web App Link - https://spacemanspiff-713-itai2373-newsbot-final-streamlit-app-yf5n1a.streamlit.app/
+Streamlit Web App Link - https://itai2373-newsbot-final-3tlthu4qutdmrh6bhegevf.streamlit.app/
 
 NewsBot 2.0 is a reproducible NLP capstone that extends the completed midterm NewsBot rather than replacing it. It preserves the deterministic HuffPost data preparation, preprocessing, TF-IDF classification comparison, VADER sentiment, spaCy NER, evaluation, visualizations, and Streamlit dashboard foundation, then adds topic discovery, temporal analysis, entity graphs, summarization, retrieval, multilingual demonstrations, and grounded conversational exploration.
 
