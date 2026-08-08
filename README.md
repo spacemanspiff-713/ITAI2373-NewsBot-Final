@@ -25,7 +25,13 @@ python3 -m venv .venv
 
 ## Notebooks, Tests, and Web App
 
-Run `01_Data_Exploration.ipynb` through `07_System_Integration.ipynb` from the repository root. The optional Flask frontend supports `/`, `/analyze`, `/batch`, `/query`, `/api/analyze`, `/api/query`, and `/health`.
+Run `01_Data_Exploration.ipynb` through `07_System_Integration.ipynb` from the repository root. The primary optional frontend is the Streamlit continuation of the midterm dashboard:
+
+```bash
+./.venv/bin/streamlit run streamlit_app.py
+```
+
+It provides dashboard, article analysis, batch processing, natural-language query, results, and dataset-explorer views. The Flask API remains available for container deployment at `/`, `/analyze`, `/batch`, `/query`, `/api/analyze`, `/api/query`, and `/health`.
 
 ## Model Performance
 
