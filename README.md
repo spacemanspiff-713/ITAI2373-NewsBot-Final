@@ -37,7 +37,7 @@ The final project reuses the unchanged midterm sample: 1,800 balanced HuffPost r
 
 ```bash
 python3 -m venv .venv
-./.venv/bin/pip install -r requirements.txt
+./.venv/bin/pip install -r requirements-local.txt
 ./.venv/bin/python -m spacy download en_core_web_sm
 ./.venv/bin/python -m pytest -q
 ./.venv/bin/python scripts/run_phase2.py
@@ -100,4 +100,4 @@ Jason Trimble completed this project independently, including the documented tec
 
 ### Streamlit Community Cloud
 
-Deploy `streamlit_app.py` with **Python 3.12** selected in Community Cloud's **Advanced settings**. The pinned data-science stack is intentionally Python 3.12-compatible; Community Cloud does not use `runtime.txt` to select Python. If an existing deployment was created on Python 3.14, delete and recreate it with Python 3.12.
+Deploy `streamlit_app.py` from the repository root. Community Cloud automatically installs the lightweight `requirements.txt`, which supports its Python 3.14 runtime and excludes the optional PyTorch/Transformers stack. The reproducible Python 3.12 development environment remains in `requirements-local.txt` and `requirements-lock.txt`; it is not installed by the hosted app.

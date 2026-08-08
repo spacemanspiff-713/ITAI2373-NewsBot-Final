@@ -17,9 +17,14 @@ class _Encoder(json.JSONEncoder):
         return super().default(value)
 
 
+def serialize_json(data: dict | list) -> str:
+    """Serialize analysis output, including pandas and NumPy values."""
+    return json.dumps(data, indent=2, cls=_Encoder)
+
+
 def export_json(data: dict | list, path: str | Path) -> Path:
     target = Path(path); target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(data, indent=2, cls=_Encoder), encoding="utf-8")
+    target.write_text(serialize_json(data), encoding="utf-8")
     return target
 
 

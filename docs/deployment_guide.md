@@ -4,7 +4,7 @@
 
 ```bash
 python3 -m venv .venv
-./.venv/bin/pip install -r requirements.txt
+./.venv/bin/pip install -r requirements-local.txt
 ./.venv/bin/python -m spacy download en_core_web_sm
 ./.venv/bin/python -m pytest -q
 ./.venv/bin/python scripts/run_phase2.py
@@ -23,7 +23,9 @@ Set `NEWSBOT_SECRET_KEY` to a unique deployment secret. Optional variables are `
 
 ### Streamlit Community Cloud
 
-Deploy `streamlit_app.py` from the repository root and select **Python 3.12** in the deployment dialog's **Advanced settings**. This project pins Python 3.12-compatible pandas and PyTorch wheels. Do not add a `runtime.txt` file: Community Cloud chooses Python from the deployment settings, not that file. If an app was already created on Python 3.14, delete it and deploy it again with Python 3.12 selected; Community Cloud cannot change an existing app's Python version in place. Confirm the full requirements install and the spaCy model availability before publishing the URL.
+Deploy `streamlit_app.py` from the repository root. Community Cloud installs the root `requirements.txt`, a deliberately small Python 3.14-compatible runtime with binary-wheel-compatible package ranges. PyTorch, Transformers, notebook tooling, PDF/PPTX generation, and the Flask server remain in `requirements-local.txt`; the hosted Streamlit interface does not import them. The spaCy English model is installed directly by the Cloud requirements so named-entity analysis remains available.
+
+After pushing a dependency change, reboot the app from its Cloud management page and inspect the dependency log. A successful build should not mention the PyTorch CPU index or download a pandas source archive (`.tar.gz`).
 
 ## First-run and operational notes
 

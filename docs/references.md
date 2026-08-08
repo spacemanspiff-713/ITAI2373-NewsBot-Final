@@ -9,4 +9,4 @@
 - Tiedemann and Thottingal, OPUS-MT/MarianMT — optional Spanish/French translation adapters.
 - Streamlit and Flask documentation — optional web delivery.
 
-Package versions are pinned in `requirements.txt`. External model outputs are not presented as independently verified facts.
+The reproducible Python 3.12 package versions are pinned in `requirements-local.txt` and `requirements-lock.txt`; the root `requirements.txt` contains the Python 3.14-compatible Streamlit Cloud runtime. External model outputs are not presented as independently verified facts.
